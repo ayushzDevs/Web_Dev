@@ -1,34 +1,27 @@
-header{
-    background-color: rgb(50, 41, 171);
-    padding: 20px;
+h1{
+    color: rgb(11, 61, 226);
     text-align: center;
+    border: solid;
+    width: 100%;
+    background-color:aqua;
 }
 
 
 h2{
-    color: yellowgreen;
-    padding: 10px;
     text-align: center;
+    color:darkolivegreen;
+    border: solid;
+    width: 100%;
+    background-color:white;
+    border-color: black;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
-
-p{
-    font-family: "Times New Roman", serif;
-    font-size: 18px;
-    color: cyan;
-    padding: 10px;
+h3{
     text-align: center;
-    text-decoration: underline;
-}
-
-ul{
-    padding: 10px;
-    text-align: center;
-}
-
-li{
-    list-style-type:disc;
-    padding:5px;
-    text-align: center;
-    color: darkcyan;
+    color: rgb(11, 61, 226);
+    border: solid;
+    width: 100%;
+    background-color:aqua;
     font-weight: bold;
 }
