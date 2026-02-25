@@ -27,6 +27,7 @@ h3{
 #signup{
     background-color: cyan;
     color: black;
+    
 }
 
 .upvote{
@@ -52,4 +53,19 @@ p+h3{
     width: 100%;
     background-color:black; 
     border: 2px solid white;
+}
+
+button:hover{
+    background-color: black;
+    color: cyan;
+}
+
+button:active{
+    background-color: black;
+    color: red;
+}
+
+h3::first-letter{
+    color: red;
+    font-size: 200%;
 }
