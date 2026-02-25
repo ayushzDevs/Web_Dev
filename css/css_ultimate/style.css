@@ -4,10 +4,13 @@
     background-color: azure;
     margin: 10px auto;
     border : 2px solid black;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 400px 400px 400px;
 }
 
 h1{
