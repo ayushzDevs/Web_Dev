@@ -7,7 +7,11 @@ h1{
     text-align:start;
     font-weight: bold;
 }
-
+h1{
+    color: #b92b99 !important;
+    text-align:start;
+    font-weight: bold;
+}
 p{
     color: blue;
 }
@@ -69,3 +73,4 @@ h3::first-letter{
     color: red;
     font-size: 200%;
 }
+
