@@ -1,3 +1,55 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+h1{
+    color: #b92b17;
+    text-align:start;
+    font-weight: bold;
+}
+
 p{
     color: blue;
+}
+h3{
+    color: cyan;
+    text-align: center;
+    border: solid;
+    width: 100%;
+    background-color:black; 
+    border: 2px solid white;
+}
+
+#login{
+    background-color: cyan;
+    color: black;
+}
+#signup{
+    background-color: cyan;
+    color: black;
+}
+
+.upvote{
+    background-color: cyan;
+    color: black;
+}
+
+.answer{
+    background-color: cyan;
+    color: black;
+    
+}
+
+div > input{
+    background-color: cyan;
+    color: black;
+}
+
+p+h3{
+    color: red;
+    text-align: center;
+    border: solid;
+    width: 100%;
+    background-color:black; 
+    border: 2px solid white;
 }
