@@ -20,3 +20,5 @@ console.log("Sum of " + num1 + " and " + num2 + " is " + sum);
 let name = "John";
 console.log("Hello, " + name + "!");
 
+const pi = 3.14;
+console.log("Value of pi is " + pi);
