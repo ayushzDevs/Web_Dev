@@ -1,7 +1,7 @@
-console.log("Nothing to see here!");
+let pencil = 10;
+let eraser = 5;
+// let output = "the total price is : "+(pencil+eraser) + " rupees"
 
-let a = 10;
-let b = 5;
+let output = `the total price is : ${pencil+eraser} rupees`;
 
-let sum = a+b;
-console.log("sum is : "+sum)
+console.log(output);
