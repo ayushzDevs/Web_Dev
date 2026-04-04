@@ -1,6 +1,7 @@
 let marks =73;
 
 if(marks>=33){
+    console.log("pass")
     if(marks>=80){
         console.log("Grade : O");
     }

@@ -47,7 +47,7 @@
 
 // console.log(largest);
 
-// Write a program to check if 2 numbers have the same last digit
+// Write a program to check if 2 numbers have the same last digit -> 2
 
 let num1 = 32;
 let num2 = 47853;
