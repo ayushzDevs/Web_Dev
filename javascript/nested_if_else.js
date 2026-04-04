@@ -9,7 +9,7 @@ if(marks>=33){
         console.log("Grade : A");
     }
     else if(marks>=40){
-        console.log("grade : B");
+        console.log("Grade : B");
     }
 
 }
