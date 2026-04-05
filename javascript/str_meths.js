@@ -29,3 +29,7 @@ console.log(strz.slice(-8,-2))
 console.log(strz.slice(5))
 console.log(strz.slice(strz.length-1));
 
+
+
+console.log(strz.replace("Love","do"));
+console.log(strz.repeat(3));
