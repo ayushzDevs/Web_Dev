@@ -1,4 +1,6 @@
 let students = ["Ayush","Rohit","Satyarth","Shivam"];
+let new_students = students.shift();
+console.log(students);
 console.log(students);
 console.log(students[0]);
 console.log(students[1]);
@@ -23,3 +25,9 @@ students.shift();
 console.log(students);
 
 console.log(students.length);
+
+
+let info = ["Ayush" , 21 , 89.9];
+info [1] = 22;
+console.log(info);
+
