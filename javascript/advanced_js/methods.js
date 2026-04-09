@@ -12,3 +12,8 @@ const calculator = {
         return a/b;
     }
 };
+
+console.log(calculator.add(2,3));
+console.log(calculator.sub(2,3));
+console.log(calculator.mul(2,3));
+console.log(calculator.div(2,3));
