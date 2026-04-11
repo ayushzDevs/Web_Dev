@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: Arial;
 }
 
@@ -39,4 +39,17 @@ body {
 
 #description {
   background-color: antiquewhite;
+} */
+
+.class1{
+  color: red;
+}
+
+.class2{
+color:blue;
+}
+
+.class3{
+  background-color: pink;
+  border: 1px solid black;
 }

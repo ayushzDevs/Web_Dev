@@ -1,50 +1,32 @@
-// let smallimg = document.getElementsByClassName("oldImg");
+let p1 = document.createElement("p");
+p1.innerText = "This is a paragraph created using JavaScript.";
+p1.classList.add("class1");
+document.querySelector("body").append(p1);
 
-// for(let i =0; i<smallimg.length;i++){
-//     smallimg[i].src = "assets/spiderman_img.png" ;
-//     console.log(`value of img no. ${i} is changed`);
-// }
+let h3 = document.createElement("h3");
+h3.innerText = "i am blue";
+h3.classList.add("class2");
+document.querySelector("body").prepend(h3);
 
-// let n = document.getElementsByTagName("p");
-
-// for(let i=0 ; i<n.length; i++){
-//     n[i].style.color = "red";
-//     console.log(`value of index ${i} changed`);
-// }
-
-// let css = document.querySelector("body");
-// css.style.backgroundColor = "black";
-// css.style.color = "white";
-// css.style.fontFamily = "Arial";
-// css.style.textAlign = "center";
-// css.style.padding = "20px";
-// css.style.margin = "20px";
-// css.style.border = "2px solid white";
-// css.style.borderRadius = "10px";
-// console.log("body css changed");
-
-// let h1 = document.querySelector("h1");
-// h1.style.fontSize = "50px";
-// h1.style.textShadow = "2px 2px 5px red";
-// console.log("h1 css changed");
-
-// let h2 = document.querySelector("h2");
-// h2.style.fontSize = "30px";
-// h2.style.textShadow = "1px 1px 3px red";
-// console.log("h2 css changed");
-
-// let d = document.querySelector("#description");
-// d.style.fontSize = "20px";
-// d.style.textShadow = "1px 1px 2px red";
-// console.log("description css changed");
-
-// console.dir(document.querySelector("div a")) --> to get a single tag element
-
-// console.dir(document.querySelectorAll("div a"))  --> to get all tags 
+let d = document.createElement("div");
+d.innerHTML = "<h1> i am in a div</h1> <p> mee too </p>";
+d.classList.add("class3");
+document.querySelector("body").append(d);
+// document.querySelector("body").prepend(d);
 
 
-let links = document.querySelectorAll(".box a");
 
-for( link of links){
-    link.style.color = "green";
-}
+
+// let div = document.createElement("div");
+// let h1 = document.createElement("h1");
+
+// let p2 = document.createElement("p");
+
+// h1.innerText = "i am another div";
+// p2.innerText = "mee too";
+
+// div.append(h1);
+// div.append(p2);
+
+// div.classList.add("class3");
+// document.querySelector("body").append(div);
