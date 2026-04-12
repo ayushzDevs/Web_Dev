@@ -1,6 +1,6 @@
-.box{
-    height: 100px;
-    width: 100px;
-    background-color: pink;
-    border: 1px solid black;
+.X{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 0 auto;
 }

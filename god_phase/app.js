@@ -1,20 +1,12 @@
-let kb = document.querySelector('input');
+let form = document.querySelector(".X");
+form.addEventListener("submit",((event)=>{
+    event.preventDefault();
 
-kb.addEventListener('keyup', function(event){
-    console.log(event.code);
+    
+    let username = form.querySelector(".U").value;
+    let password = form.querySelector(".P").value;
 
-    if(event.code === 'ArrowUp' || event.code === 'KeyU'){
-        console.log("character moves forward");
+    console.dir(form);
 
-    }
-    else if(event.code =="ArrowDown" || event.code =="KeyD"){
-        console.log("character moves backward");
-    }
-    else if(event.code =="ArrowLeft" || event.code =="KeyL"){
-        console.log("character moves left");
-    }
-    else if(event.code =="ArrowRight"|| event.code =="KeyR"){
-        console.log("character moves right");
-    }
-
-});
+    alert(`Welcome ${username}`);
+}));
