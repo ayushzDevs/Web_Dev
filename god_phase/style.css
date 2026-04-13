@@ -1,6 +1,13 @@
-.X{
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    margin: 0 auto;
+div{
+    background-color: pink;
+    width: 400px;
+    height: 200px;
+}
+
+ul{
+    background-color: blue;
+}
+
+li{
+    background-color: greenyellow;
 }
