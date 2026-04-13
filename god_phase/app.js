@@ -1,22 +1,10 @@
-let form = document.querySelector(".X");
-form.addEventListener("submit",((event)=>{
-    event.preventDefault();
+let i = document.querySelector("#text");
+let o = document.querySelector("#output");
 
-    
-//     let username = form.querySelector(".U").value;
-//     let password = form.querySelector(".P").value;
 
-//     console.dir(form);
-
-//     alert(`Welcome ${username}`);
+i.addEventListener("input",((e)=>{
+console.log(e.target.value);
+o.innerText = e.target.value;    
 }));
 
-let u = document.querySelector(".U");
 
-u.addEventListener("change",((e)=>{
-    console.log(`event changed , final value is : ${e.target.value} `);
-}));
-
-u.addEventListener("input", function(){
-    console.log(`event changed , new value added is : ${this.value} `);
-})
