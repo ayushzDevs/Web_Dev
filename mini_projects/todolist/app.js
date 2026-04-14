@@ -16,7 +16,13 @@ b.addEventListener("click",function(){
     t.value= "";
 });
 
-u.addEventListener("click",function(){
+u.addEventListener("click",function(event){
     console.log("ul was clicked");
+    if(event.target.classList.contains("del")){
+        let li = event.target.parentElement;
+        u.removeChild(li);
+    }
 });
+
+
 
