@@ -154,7 +154,7 @@ let gamesequence = [];
 let usersequence = [];
 
 
-// 🔍 CHECK SEQUENCE
+// CHECK SEQUENCE
 function checksequence(idx){
 
     if(usersequence[idx] === gamesequence[idx]){
@@ -190,7 +190,7 @@ function userflash(btn){
 }
 
 
-// ⬆ LEVEL UP
+// LEVEL UP
 function levelup(){
     usersequence = [];
     level++;
