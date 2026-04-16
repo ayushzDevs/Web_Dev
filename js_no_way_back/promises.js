@@ -13,8 +13,33 @@ function savetodb(data , success , failure){
 
 savetodb("ayush",
 ()=>{
-    console.log("success : data saved successfully" );
+    console.log("success1 : data saved successfully" );
+
+    savetodb("chakraborty",
+        ()=>{
+        console.log("success2 : data saved successfully" );
+
+        savetodb("jujutsu",
+            ()=>{
+            console.log("success3 : data saved successfully" );
+
+            savetodb("kaisen",
+                ()=>{
+                console.log("success4 : data saved successfully ");
+            },
+            ()=>{
+                console.log("failure1 : data could not be saved");
+            })
+        },
+        ()=>{
+            console.log("failure2 : data could not be saved");
+
+        })
+    },
+    ()=>{
+        console.log("failure3 : data could not be saved");
+    })
 },
 ()=>{
-    console.log("failure : data could not be saved");
+    console.log("failure4 : data could not be saved");
 });
