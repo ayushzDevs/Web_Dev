@@ -23,15 +23,15 @@ changecolor("red",1000, ()=>{
                                 changecolor("brown",1000, ()=>{
                                     changecolor("black",1000, ()=>{
                                         console.log("All colors are done");
-                                    })
-                                })
-                            })
-                        })
-                    })
-                })
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
                 
-            })
+            });
 
-        })
-    })
-})
+        });
+    });
+});
