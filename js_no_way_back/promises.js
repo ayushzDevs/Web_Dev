@@ -1,47 +1,51 @@
-// function savetodb(data , success , failure){
+// function savetodb(data , resolve , reject){
 //     let internetspeed = Math.floor(Math.random()*10) +1;
 
 //     if(internetspeed>4){
-//             success();
+//             resolve();
 //     }
 //     else{
-//         failure();
+//         reject();
 //     }
 
 
 // }
 
+
+
+// callback hell
+
 // savetodb("ayush",
 // ()=>{
-//     console.log("success1 : data saved successfully" );
+//     console.log("resolve1 : data saved resolvefully" );
 
 //     savetodb("chakraborty",
 //         ()=>{
-//         console.log("success2 : data saved successfully" );
+//         console.log("resolve2 : data saved resolvefully" );
 
 //         savetodb("jujutsu",
 //             ()=>{
-//             console.log("success3 : data saved successfully" );
+//             console.log("resolve3 : data saved resolvefully" );
 
 //             savetodb("kaisen",
 //                 ()=>{
-//                 console.log("success4 : data saved successfully ");
+//                 console.log("resolve4 : data saved resolvefully ");
 //             },
 //             ()=>{
-//                 console.log("failure1 : data could not be saved");
+//                 console.log("reject1 : data could not be saved");
 //             })
 //         },
 //         ()=>{
-//             console.log("failure2 : data could not be saved");
+//             console.log("reject2 : data could not be saved");
 
 //         })
 //     },
 //     ()=>{
-//         console.log("failure3 : data could not be saved");
+//         console.log("reject3 : data could not be saved");
 //     })
 // },
 // ()=>{
-//     console.log("failure4 : data could not be saved");
+//     console.log("reject4 : data could not be saved");
 // });
 
 
@@ -53,16 +57,44 @@
 
 function savetodb(data){
 
-        return new Promise((success , failure)=>{
+        return new Promise((resolve , reject)=>{
 
                 let internetspeed = Math.floor(Math.random()*10) +1;
                 if(internetspeed>4){
-                    success("success : data was saved successfully");
+                    resolve("resolve : data was saved resolvefully");
                 }
                 else{
-                    failure("failure : data could not be saved");
+                    reject("reject : data could not be saved");
                 }
     })
 }
 
+
+// then() and catch() methods
+
+
+let request = savetodb("ayush"); //this is a promise object
+
+request.then(()=>{
+    console.log("resolve1 : data saved resolvefully" );
+    console.log(request);
+})
+
+.catch(()=>{
+    console.log("reject1 : data could not be saved");
+    console.log(request);
+})
+
+
+// then() and catch() compact use
+
 // savetodb("ayush")
+// .then(()=>{
+//     console.log("resolve1 : data saved resolvefully" );
+//     console.log();
+// })
+
+// .catch(()=>{
+//     console.log("reject1 : data could not be saved");
+//     console.log();
+// })
