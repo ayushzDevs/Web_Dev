@@ -17,4 +17,4 @@ savetodb("ayush",
 },
 ()=>{
     console.log("failure : data could not be saved");
-})
+});
