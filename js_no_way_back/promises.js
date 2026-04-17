@@ -107,20 +107,52 @@ function savetodb(data){
 
 // promise chaining
 
+// savetodb("ayush")
+// .then(() =>{
+//     console.log("resolve1 : data saved" );
+//     return savetodb("chakraborty");
+// })
+
+// .then(()=>{
+//     console.log("resolve2 : data saved" );
+//     return savetodb("jujutsu");
+// })
+// .then(()=>{
+//     console.log("resolve3 : data saved" );
+// })
+
+// .catch(()=>{
+//     console.log("reject1 : data could not be saved");
+// })
+
+
+
+
+
+
+
+
+
+// efficient way of promise chaining
+
 savetodb("ayush")
-.then(() =>{
-    console.log("resolve1 : data saved" );
+.then((result) =>{
+    console.log("resolve1 : data1 saved" );
+    console.log(result);
     return savetodb("chakraborty");
 })
 
-.then(()=>{
-    console.log("resolve2 : data saved" );
+.then((result)=>{
+    console.log("resolve2 : data2 saved" );
+    console.log(result);
     return savetodb("jujutsu");
 })
-.then(()=>{
-    console.log("resolve3 : data saved" );
+.then((result)=>{
+    console.log("resolve3 : data3 saved" );
+    console.log(result);
 })
 
-.catch(()=>{
+.catch((error)=>{
     console.log("reject1 : data could not be saved");
+    console.log(error);
 })
