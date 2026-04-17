@@ -14,3 +14,7 @@ greet()
 .catch((err)=>{
     console.log("Error in greeting : ", err);
 })
+
+let demo = async()=>{
+    return 5;
+}
