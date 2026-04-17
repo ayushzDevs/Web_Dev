@@ -72,18 +72,21 @@ function savetodb(data){
 
 // then() and catch() methods
 
+// let request = savetodb("ayush"); //this is a promise object
 
-let request = savetodb("ayush"); //this is a promise object
+// request.then(()=>{
+//     console.log("resolve1 : data saved resolvefully" );
+//     console.log(request);
+// })
 
-request.then(()=>{
-    console.log("resolve1 : data saved resolvefully" );
-    console.log(request);
-})
+// .catch(()=>{
+//     console.log("reject1 : data could not be saved");
+//     console.log(request);
+// })
 
-.catch(()=>{
-    console.log("reject1 : data could not be saved");
-    console.log(request);
-})
+
+
+
 
 
 // then() and catch() compact use
@@ -98,3 +101,26 @@ request.then(()=>{
 //     console.log("reject1 : data could not be saved");
 //     console.log();
 // })
+
+
+
+
+// promise chaining
+
+savetodb("ayush")
+.then(() =>{
+    console.log("resolve1 : data saved" );
+    return savetodb("chakraborty");
+})
+
+.then(()=>{
+    console.log("resolve2 : data saved" );
+    return savetodb("jujutsu");
+})
+.then(()=>{
+    console.log("resolve3 : data saved" );
+})
+
+.catch(()=>{
+    console.log("reject1 : data could not be saved");
+})
