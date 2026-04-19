@@ -25,7 +25,8 @@ let btn_c = document.querySelector("#search_c");
 
 btn_c.addEventListener("click", async () => {
     console.log("button clicked");
-    getcolleges(country);
+    let clg = await getcolleges(country);
+    console.log(clg);
 })
 
 
@@ -34,7 +35,7 @@ btn_c.addEventListener("click", async () => {
 async function getcolleges(country){
     try{
         let res = await axios.get(uni+country.value);
-        console.log(res.data);
+        return res.data;
     }
     catch(e){
         console.log(`error : ${e.message}`);
