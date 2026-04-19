@@ -15,9 +15,18 @@ fetch(url)
     .then((response)=>{
         console.log("Response : ",response);
         return response.json()
-        })
-        .then((data)=>{
-            console.log("Data : ",data.fact);})
+    })
+    .then((data1)=>{
+        console.log("Data 1 : ",data1.fact);
+        return fetch(url);
+    })
+    .then((response)=>{
+        console.log("Response : ",response);
+        return response.json();
+    })
+    .then((data2)=>{
+        console.log("Data 2 : ",data2.fact);
+    })
     .catch((error)=>{
         console.log("Error : ",error);
     })
