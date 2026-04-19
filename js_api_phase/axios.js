@@ -26,10 +26,12 @@ let facts = document.querySelectorAll("#facts li");
 
 btn.addEventListener("click", async function(){
     console.log("button clicked")
+    
     try{
         for(fact of facts){
             let res = await getfacts();
-            fact.append(res);
+            // fact.append(res);
+            fact.innerText = res;
         }
     }
     catch(e){
