@@ -1,4 +1,7 @@
 let url = "https://catfact.ninja/fact";
+let btn = document.querySelector("#show1");
+
+let facts = document.querySelectorAll("#facts li");
 
 async function getfacts(){
     try{
@@ -20,9 +23,7 @@ async function getfacts(){
     }
 }
 
-let btn = document.querySelector("#show");
 
-let facts = document.querySelectorAll("#facts li");
 
 btn.addEventListener("click", async function(){
     console.log("button clicked")
@@ -38,3 +39,36 @@ btn.addEventListener("click", async function(){
         console.log(`error : ${e.message}`)
     }
 })
+
+
+
+let url2 = "https://dog.ceo/api/breeds/image/random";
+let btn2 = document.querySelector("#show2");
+
+let image = document.querySelectorAll("#image img");
+
+
+btn2.addEventListener("click", async function(){
+    console.log("button clicked")
+    
+    try{
+        for(fact of image){
+            let link = await getimage();
+            fact.setAttribute("src", link);
+            fact.style.width = "200px";
+        }
+    }
+    catch(e){
+        console.log(`error : ${e.message}`)
+    }
+})
+
+async function getimage(){
+    try{
+        let link = await axios.get(url2);
+        return link.data.message;
+    }
+    catch(e){
+        console.log(`error : ${e.message}`)
+    }
+}
