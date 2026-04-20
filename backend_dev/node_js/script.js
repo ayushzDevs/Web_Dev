@@ -1,5 +1,6 @@
-let args = process.argv;
-for(let i=0; i<args.length ; i++){
-    console.log(args[i]);
-}
+const some = require('./script2');
 
+console.log(some.mul(5, 3));
+console.log(some.sum(5, 3));
+console.log(some.g);
+console.log(some.pi);
